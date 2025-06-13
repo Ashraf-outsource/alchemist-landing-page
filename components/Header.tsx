@@ -7,7 +7,7 @@ const navItems: NavItem[] = [
   { label: 'Services', href: '#services' },
 ];
 
-const logoUrl = "/logo.jpg";
+const logoUrl = "/logo.png";
 
 export const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
