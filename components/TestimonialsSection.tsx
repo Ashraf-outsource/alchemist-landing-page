@@ -8,7 +8,7 @@ const testimonialsData: Testimonial[] = [
   {
     id: '1',
     stars: 5,
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+    text: '"Absolutely outstanding service! The team was professional, friendly, and went above and beyond to meet my needs. I couldn’t be happier with the results. Highly recommended!"',
     avatarSrc: 'https://picsum.photos/seed/avatar1/100/100',
     name: 'Benjamin',
     role: 'Client',
@@ -16,7 +16,7 @@ const testimonialsData: Testimonial[] = [
   {
     id: '2',
     stars: 5,
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+    text: '"I was truly impressed by the quality and speed of their work. They listened to what I needed and delivered exactly that — with excellent customer support throughout the process."',
     avatarSrc: 'https://picsum.photos/seed/avatar2/100/100',
     name: 'Benjamin',
     role: 'Client',

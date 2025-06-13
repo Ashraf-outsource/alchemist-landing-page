@@ -8,21 +8,21 @@ const servicesData: Service[] = [
   {
     id: '1',
     imageSrc: '/Group4.png',
-    title: '24 YEARS',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.',
+    title: 'RESIDENTIAL EPOXY FLOORING',
+    description: 'Enhance the beauty and durability of your homes floors with our residential epoxy flooring services. Our skilled craftsmen create stunning designs that not only elevate the aesthetics of your living spaces but also provide a long-lasting and easy-to-maintain surface',
   },
   {
     id: '2',
     imageSrc: '/Group3.png',
-    title: 'EXPERIENCED',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.',
+    title: 'COMMERCIAL EPOXY FLOORING',
+    description: 'Make a lasting impression on your clients and employees with our commercial epoxy flooring solutions. Our team understands the unique challenges that commercial spaces face, and we tailor our services to meet your specific needs.',
     highlighted: true,
   },
   {
     id: '3',
     imageSrc: '/Group5.png',
-    title: '24 YEARS EXPERIENCED',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.',
+    title: 'CONCRETE SEALING',
+    description: 'Preserve the longevity of your concrete surfaces with our professional concrete sealing services. Our advanced sealing techniques protect your concrete from moisture, stains, and wear, ensuring a longer lifespan and reducing the need for costly repairs.',
   },
 ];
 
@@ -50,8 +50,7 @@ export const ServicesSection: React.FC = () => {
           </div>
           <SectionTitle text="CHECK OUR SERVICES" className="mb-4" useGradient={false}/>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad voluptate velit esse cillum dolore eu fugiat.
-          </p>
+            We offer a wide range of services designed to meet your needs with precision and care. Whether you're looking for expert support, reliable solutions, or innovative ideas, our team is here to help. Each service is delivered with a focus on quality, efficiency, and customer satisfaction. Take a look at what we offer and discover how we can make a difference for you.          </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {servicesData.map((service) => (

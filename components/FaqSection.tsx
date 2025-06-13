@@ -7,18 +7,18 @@ import { ChevronDownIcon, ChevronUpIcon } from './icons';
 const faqData: FaqItemData[] = [
   {
     id: '1',
-    question: 'HOW TO CHANGE MY PHOTO FROM ADMIN DASHBOARD?',
-    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
+    question: 'WHAT SERVICES DO WE OFFER?',
+    answer: 'At Signature Epoxy Flooring, we specialize in premium epoxy flooring and concrete solutions for both residential and commercial spaces. From stunning, easy-to-maintain residential epoxy floors to durable, high-performance commercial coatings, our team delivers custom results tailored to your needs. We also offer garage floor epoxy for added protection and a polished finish, as well as concrete sealing services that extend the life of your surfaces by shielding them from moisture, stains, and wear. No matter the project, we are here to elevate your space with quality craftsmanship and lasting value.',
   },
   {
     id: '2',
-    question: 'HOW TO CHANGE MY PASSWORD EASILY?',
-    answer: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+    question: 'WHAT AREAS DO WE SERVE?',
+    answer: 'Signature Epoxy proudly serves homeowners and businesses throughout Louisiana, bringing expert decorative concrete and epoxy flooring solutions to a wide range of communities. Our service areas include Baton Rouge, Lafayette, New Orleans, Hammond, Gonzales, Denham Springs, Covington, Zachary, Mandeville, Thibodaux, Houma, and Slidell. If you are located nearby and do not see your city listed, feel free to reach out-we are always open to accommodating projects across the region.',
   },
   {
     id: '3',
-    question: 'HOW TO CHANGE MY SUBSCRIPTION PLAN USING PAYPAL',
-    answer: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.',
+    question: 'WHAT SETS US APART FROM OTHER OPTIONS?',
+    answer: 'What sets Signature Epoxy apart is our commitment to quality, customization, and customer care. We don’t believe in one-size-fits-all solutions—every project is tailored to match your specific vision and needs. Leading our team is Connor, an experienced operator with over 5 years in the decorative concrete and epoxy flooring industry. His hands-on expertise, eye for detail, and dedication to doing things right the first time ensure that every client receives top-tier workmanship and a smooth, stress-free experience. From your first consultation to the final coat, we deliver lasting results you can count on.',
   },
 ];
 

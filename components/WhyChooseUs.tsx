@@ -11,15 +11,21 @@ export const WhyChooseUs: React.FC = () => {
           <div>
             <SectionTitle text="WHY WE CHOOSE US" className="mb-6 text-left" useGradient={false} />
             <p className="text-gray-300 mb-8 leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut laboreet dolore magna aliqua.Ut enim ad voluptate velit esse cillum dolore eu fugiat.Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut laboreet dolore magna aliqua.Ut enim ad voluptate velit esse cillum dolore eu fugiat.
-            </p>
+               Local Expertise – We’re Baton Rouge-based and Louisiana-proud, with a deep understanding of regional conditions and flooring needs.
+              <br/>
+              Top-Tier Materials – We use only premium epoxy and concrete sealants for long-lasting durability and finish.
+              <br/>
+              Tailored Designs – Choose from a wide range of flake blends, metallics, colors, and finishes to match your space.
+              <br/>
+              Seamless Experience – From consultation to final walkthrough, we ensure a smooth, stress-free process every step of the way.</p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-              <GoldenButton onClick={() => console.log('Why Choose Us Get Quote clicked')} className="px-8 py-3">
+              <GoldenButton onClick={() => console.log('Hero Get a Quote clicked')} className="px-10 py-4 text-base">
                 Get Your free Quote
               </GoldenButton>
-              <GoldenButton variant="outline-gold" onClick={() => console.log('Why Choose Us Call Now clicked')} className="px-8 py-3">
+              <GoldenButton onClick={() => console.log('Hero Call Now clicked')} className="px-10 py-4 text-base">
                 Call Now: +1 336 300 9880
-              </GoldenButton>
+              </GoldenButton>              
+
             </div>
           </div>
           <div className="grid grid-cols-1 grid-rows-1 gap-4 h-[400px] md:h-[500px]">
