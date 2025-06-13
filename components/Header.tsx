@@ -7,6 +7,8 @@ const navItems: NavItem[] = [
   { label: 'Services', href: '#services' },
 ];
 
+const logoUrl = "/logo.jpg";
+
 export const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -19,12 +21,12 @@ export const Header: React.FC = () => {
   }, []);
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black bg-opacity-90 shadow-lg backdrop-blur-sm' : 'bg-transparent'}`}>
+    <header className={` top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black bg-opacity-90 shadow-lg backdrop-blur-sm' : 'bg-transparent'}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
-            <a href="#" className="text-3xl font-bold text-white tracking-wider">
-              ALCHEMIST
+            <a href="#" aria-label="Alchemist Resin Home">
+              <img src={logoUrl} alt="Alchemist Resin Logo" className="h-20 w-auto" />
             </a>
           </div>
 
@@ -62,7 +64,7 @@ export const Header: React.FC = () => {
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center">
-            <button className="text-gray-300 hover:text-white p-2">
+            <button className="text-gray-300 hover:text-white p-2" aria-label="Open menu">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
           </div>
