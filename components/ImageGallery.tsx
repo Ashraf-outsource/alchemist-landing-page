@@ -2,11 +2,11 @@
 import React from 'react';
 
 const imageUrls = [
-  'public/image 9.png',
-  'public/image 10.png',
-  'public/image 11.png',
-  'public/image 12.png',
-  'public/image 13.png',
+  'public/image9.png',
+  'public/image10.png',
+  'public/image11.png',
+  'public/image12.png',
+  'public/image13.png',
 ];
 
 export const ImageGallery: React.FC = () => {
