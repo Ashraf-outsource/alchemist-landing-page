@@ -7,20 +7,20 @@ import { ArrowRightIcon, TelescopeIcon } from './icons';
 const servicesData: Service[] = [
   {
     id: '1',
-    imageSrc: 'public/Group4.png',
+    imageSrc: '/Group4.png',
     title: '24 YEARS',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.',
   },
   {
     id: '2',
-    imageSrc: 'public/Group3.png',
+    imageSrc: '/Group3.png',
     title: 'EXPERIENCED',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.',
     highlighted: true,
   },
   {
     id: '3',
-    imageSrc: 'public/Group5.png',
+    imageSrc: '/Group5.png',
     title: '24 YEARS EXPERIENCED',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.',
   },

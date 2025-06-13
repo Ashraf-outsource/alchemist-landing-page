@@ -24,7 +24,7 @@ export const WhyChooseUs: React.FC = () => {
           </div>
           <div className="grid grid-cols-1 grid-rows-1 gap-4 h-[400px] md:h-[500px]">
             <div className="col-span-1 row-span-1 rounded-xl overflow-hidden shadow-lg">
-                <img src="public/Group2.png" alt="Epoxy floor detail" className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300" />
+                <img src="/Group2.png" alt="Epoxy floor detail" className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300" />
             </div>
           </div>
         </div>
