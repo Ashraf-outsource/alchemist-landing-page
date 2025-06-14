@@ -8,17 +8,17 @@ const faqData: FaqItemData[] = [
   {
     id: '1',
     question: 'WHAT SERVICES DO WE OFFER?',
-    answer: 'At Signature Epoxy Flooring, we specialize in premium epoxy flooring and concrete solutions for both residential and commercial spaces. From stunning, easy-to-maintain residential epoxy floors to durable, high-performance commercial coatings, our team delivers custom results tailored to your needs. We also offer garage floor epoxy for added protection and a polished finish, as well as concrete sealing services that extend the life of your surfaces by shielding them from moisture, stains, and wear. No matter the project, we are here to elevate your space with quality craftsmanship and lasting value.',
+    answer: 'At Al Chemist Resin Flooring, we specialize in premium epoxy flooring and concrete solutions for both residential and commercial spaces. From stunning, easy-to-maintain residential epoxy floors to durable, high-performance commercial coatings, our team delivers custom results tailored to your needs. We also offer garage floor epoxy for added protection and a polished finish, as well as concrete sealing services that extend the life of your surfaces by shielding them from moisture, stains, and wear. No matter the project, we are here to elevate your space with quality craftsmanship and lasting value.',
   },
   {
     id: '2',
     question: 'WHAT AREAS DO WE SERVE?',
-    answer: 'Signature Epoxy proudly serves homeowners and businesses throughout Louisiana, bringing expert decorative concrete and epoxy flooring solutions to a wide range of communities. Our service areas include Baton Rouge, Lafayette, New Orleans, Hammond, Gonzales, Denham Springs, Covington, Zachary, Mandeville, Thibodaux, Houma, and Slidell. If you are located nearby and do not see your city listed, feel free to reach out-we are always open to accommodating projects across the region.',
+    answer: 'Al Chemist Resin proudly serves homeowners and businesses throughout Louisiana, bringing expert decorative concrete and epoxy flooring solutions to a wide range of communities. Our service areas include Baton Rouge, Lafayette, New Orleans, Hammond, Gonzales, Denham Springs, Covington, Zachary, Mandeville, Thibodaux, Houma, and Slidell. If you are located nearby and do not see your city listed, feel free to reach out-we are always open to accommodating projects across the region.',
   },
   {
     id: '3',
     question: 'WHAT SETS US APART FROM OTHER OPTIONS?',
-    answer: 'What sets Signature Epoxy apart is our commitment to quality, customization, and customer care. We don’t believe in one-size-fits-all solutions—every project is tailored to match your specific vision and needs. Leading our team is Connor, an experienced operator with over 5 years in the decorative concrete and epoxy flooring industry. His hands-on expertise, eye for detail, and dedication to doing things right the first time ensure that every client receives top-tier workmanship and a smooth, stress-free experience. From your first consultation to the final coat, we deliver lasting results you can count on.',
+    answer: 'What sets Al Chemist Resin apart is our commitment to quality, customization, and customer care. We don’t believe in one-size-fits-all solutions—every project is tailored to match your specific vision and needs. Leading our team is Connor, an experienced operator with over 5 years in the decorative concrete and epoxy flooring industry. His hands-on expertise, eye for detail, and dedication to doing things right the first time ensure that every client receives top-tier workmanship and a smooth, stress-free experience. From your first consultation to the final coat, we deliver lasting results you can count on.',
   },
 ];
 

@@ -18,7 +18,7 @@ export const Hero: React.FC = () => {
               AL CHEMIST RESIN
             </h1>
             <p className="text-lg text-gray-300 mb-10 max-w-x2 mx-auto md:mx-0">
-              Our skilled team takes pride in delivering exceptional garage epoxy finishes that not only elevate the appearance of your space but also provide unmatched durability. At AL CHEMIST RESIN, we understand the importance of protecting and enhancing your concrete surfaces, which is why we offer professional concrete sealing services. 
+              Our skilled team takes pride in delivering exceptional garage epoxy finishes that not only elevate the appearance of your space but also provide unmatched durability. At Al Chemist Resin, we understand the importance of protecting and enhancing your concrete surfaces, which is why we offer professional concrete sealing services. 
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
               <GoldenButton onClick={() => console.log('Hero Get a Quote clicked')} className="px-10 py-4 text-base">
