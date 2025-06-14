@@ -10,7 +10,7 @@ const testimonialsData: Testimonial[] = [
     stars: 5,
     text: '"Absolutely outstanding service! The team was professional, friendly, and went above and beyond to meet my needs. I couldn’t be happier with the results. Highly recommended!"',
     avatarSrc: 'https://picsum.photos/seed/avatar1/100/100',
-    name: 'Benjamin',
+    name: 'Sarah',
     role: 'Client',
   },
   {

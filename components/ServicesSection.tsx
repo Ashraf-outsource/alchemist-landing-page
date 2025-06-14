@@ -50,7 +50,8 @@ export const ServicesSection: React.FC = () => {
           </div>
           <SectionTitle text="CHECK OUR SERVICES" className="mb-4" useGradient={false}/>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            We offer a wide range of services designed to meet your needs with precision and care. Whether you're looking for expert support, reliable solutions, or innovative ideas, our team is here to help. Each service is delivered with a focus on quality, efficiency, and customer satisfaction. Take a look at what we offer and discover how we can make a difference for you.          </p>
+            We offer a wide range of services designed to meet your needs with precision and care. Whether you're looking for expert support, reliable solutions, or innovative ideas, our team is here to help. Each service is delivered with a focus on quality, efficiency, and customer satisfaction. Take a look at what we offer and discover how we can make a difference for you.  
+            </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {servicesData.map((service) => (
