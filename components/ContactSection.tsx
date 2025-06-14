@@ -13,32 +13,58 @@ export const ContactSection: React.FC = () => {
   };
 
   return (
-    <section className="bg-[#1C1C1C] py-16 md:py-20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-10">
-          LET'S CONNECT TOGETHER
-        </h2>
-        <form onSubmit={handleSubmit} className="flex flex-col md:flex-row justify-center items-center gap-6 max-w-3xl mx-auto">
-          <input
-            type="tel"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-            placeholder="Phone *"
-            className="bg-[#101010] border border-gray-700 text-white rounded-full py-4 px-6 placeholder-gray-500 focus:ring-2 focus:ring-[#D1A054] focus:border-[#D1A054] outline-none w-full md:w-auto flex-1"
-            required
-          />
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Email Address *"
-            className="bg-[#101010] border border-gray-700 text-white rounded-full py-4 px-6 placeholder-gray-500 focus:ring-2 focus:ring-[#D1A054] focus:border-[#D1A054] outline-none w-full md:w-auto flex-1"
-            required
-          />
-          <GoldenButton type="submit" className="rounded-full px-10 py-4 w-full md:w-auto">
-            Chat Now
-          </GoldenButton>
-        </form>
+    <section className="bg-[#1C1C1C] py-10 md:py-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-10">
+          
+          {/* Left: Title and Address */}
+          <div className="text-center md:text-left flex-shrink-0">
+            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
+              LET'S CONNECT TOGETHER
+            </h2>
+            <br/>
+            <p className="text-sm text-gray-400 mt-2">
+              
+              1-15 57th Ave Suite 4523 Long Island city NY 11101
+            </p>
+          </div>
+
+          {/* Right: Form and (eventually) Icon */}
+          <div className="flex items-center gap-4 w-full md:w-auto md:flex-grow justify-center md:justify-end">
+            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+              <input
+                type="tel"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+                placeholder="Phone *"
+                className="bg-[#101010] border border-gray-700 text-white rounded-full py-3 px-5 placeholder-gray-500 focus:ring-2 focus:ring-[#D1A054] focus:border-[#D1A054] outline-none w-full sm:w-auto sm:min-w-[180px] md:min-w-[200px] text-sm"
+                required
+                aria-label="Phone Number"
+              />
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Email Address *"
+                className="bg-[#101010] border border-gray-700 text-white rounded-full py-3 px-5 placeholder-gray-500 focus:ring-2 focus:ring-[#D1A054] focus:border-[#D1A054] outline-none w-full sm:w-auto sm:min-w-[180px] md:min-w-[200px] text-sm"
+                required
+                aria-label="Email Address"
+              />
+              <GoldenButton type="submit" className="rounded-full px-8 py-3 w-full sm:w-auto whitespace-nowrap text-sm">
+                Chat Now
+              </GoldenButton>
+            </form>
+            {/* 
+              Placeholder for the red scribble icon. 
+              If you have an SVG or image for it, you can add it here.
+              Example: 
+              <div className="ml-2 md:ml-4 hidden sm:block">
+                <img src="/path/to/your-icon.svg" alt="Connect" className="w-12 h-12 md:w-16 md:h-16" />
+              </div>
+            */}
+          </div>
+
+        </div>
       </div>
     </section>
   );

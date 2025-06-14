@@ -58,7 +58,7 @@ export const Header: React.FC = () => {
               onClick={() => window.location.href='tel:+15663008780'}
               type="button"
             >
-              Call Now: +1 566 300 8780
+              Call Now: +1 (929) 520-0087
             </GoldenButton>
           </div>
 

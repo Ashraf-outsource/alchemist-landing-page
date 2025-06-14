@@ -17,7 +17,7 @@ export const WhyChooseUs: React.FC = () => {
                 Get Your free Quote
               </GoldenButton>
               <GoldenButton onClick={() => console.log('Hero Call Now clicked')} className="px-10 py-4 text-base">
-                Call Now: +1 566 300 8780
+                Call Now: +1 (929) 520-0087
               </GoldenButton>              
 
             </div>
