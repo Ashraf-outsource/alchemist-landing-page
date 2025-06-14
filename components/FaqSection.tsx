@@ -13,7 +13,7 @@ const faqData: FaqItemData[] = [
   {
     id: '2',
     question: 'WHAT AREAS DO WE SERVE?',
-    answer: 'ALCHEMIST Resin proudly serves homeowners and businesses throughout Louisiana, bringing expert decorative concrete and epoxy flooring solutions to a wide range of communities. Our service areas include Baton Rouge, Lafayette, New Orleans, Hammond, Gonzales, Denham Springs, Covington, Zachary, Mandeville, Thibodaux, Houma, and Slidell. If you are located nearby and do not see your city listed, feel free to reach out-we are always open to accommodating projects across the region.',
+    answer: 'ALCHEMIST Resin proudly serves homeowners and businesses throughout Louisiana, bringing expert decorative concrete and epoxy flooring solutions to a wide range of communities If you are located near our service area but do not see your city listed, do not hesitate to contact us — we are always open to taking on projects throughout the region.',
   },
   {
     id: '3',
