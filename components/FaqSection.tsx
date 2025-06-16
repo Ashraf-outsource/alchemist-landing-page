@@ -13,12 +13,12 @@ const faqData: FaqItemData[] = [
   {
     id: '2',
     question: 'WHAT AREAS DO WE SERVE?',
-    answer: 'ALCHEMIST Resin proudly serves homeowners and businesses throughout Louisiana, bringing expert decorative concrete and epoxy flooring solutions to a wide range of communities If you are located near our service area but do not see your city listed, do not hesitate to contact us — we are always open to taking on projects throughout the region.',
+    answer: 'ALCHEMIST Resin proudly serves homeowners and businesses throughout New York city , bringing expert decorative concrete and epoxy flooring solutions to a wide range of communities If you are located near our service area but do not see your city listed, do not hesitate to contact us — we are always open to taking on projects throughout the region.',
   },
   {
     id: '3',
     question: 'WHAT SETS US APART FROM OTHER OPTIONS?',
-    answer: 'What sets ALCHEMIST Resin apart is our commitment to quality, customization, and customer care. We don’t believe in one-size-fits-all solutions—every project is tailored to match your specific vision and needs. Leading our team is Connor, an experienced operator with over 5 years in the decorative concrete and epoxy flooring industry. His hands-on expertise, eye for detail, and dedication to doing things right the first time ensure that every client receives top-tier workmanship and a smooth, stress-free experience. From your first consultation to the final coat, we deliver lasting results you can count on.',
+    answer: 'What sets ALCHEMIST Resin apart is our commitment to quality, customization, and customer care. We do not believe in one-size-fits-all solutions—every project is tailored to match your specific vision and needs. Leading our team is Ed and Im, an experienced operator with over 5 years in the decorative concrete and epoxy flooring industry. His hands-on expertise, eye for detail, and dedication to doing things right the first time ensure that every client receives top-tier workmanship and a smooth, stress-free experience. From your first consultation to the final coat, we deliver lasting results you can count on.',
   },
 ];
 
