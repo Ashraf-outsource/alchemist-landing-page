@@ -18,7 +18,7 @@ const faqData: FaqItemData[] = [
   {
     id: '3',
     question: 'WHAT SETS US APART FROM OTHER OPTIONS?',
-    answer: 'What sets ALCHEMIST Resin apart is our commitment to quality, customization, and customer care. We do not believe in one-size-fits-all solutions—every project is tailored to match your specific vision and needs. Leading our team is Ed and Im, an experienced operator with over 5 years in the decorative concrete and epoxy flooring industry. His hands-on expertise, eye for detail, and dedication to doing things right the first time ensure that every client receives top-tier workmanship and a smooth, stress-free experience. From your first consultation to the final coat, we deliver lasting results you can count on.',
+    answer: 'What sets ALCHEMIST Resin apart is our commitment to quality, customization, and customer care. We do not believe in one-size-fits-all solutions—every project is tailored to match your specific vision and needs. Leading our team is Ed , an experienced operator with over 5 years in the decorative concrete and epoxy flooring industry. His hands-on expertise, eye for detail, and dedication to doing things right the first time ensure that every client receives top-tier workmanship and a smooth, stress-free experience. From your first consultation to the final coat, we deliver lasting results you can count on.',
   },
 ];
 
