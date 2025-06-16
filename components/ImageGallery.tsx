@@ -7,13 +7,14 @@ const imageUrls = [
   '/image11.png',
   '/image12.png',
   '/image13.png',
+  '/image14.png',
 ];
 
 export const ImageGallery: React.FC = () => {
   return (
     <section className="bg-black py-4 md:py-8">
       <div className="container mx-auto px-0">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6">
           {imageUrls.map((url, index) => (
             <div key={index} className="aspect-w-1 aspect-h-1 overflow-hidden group">
               <img 

@@ -32,7 +32,7 @@ export const Hero: React.FC = () => {
           <div className="flex justify-center md:justify-end">
             <QuoteForm
               title="Get A FREE Quote!"
-              subtitle=" We need to change what ever I below ”Get a quote ”"
+              subtitle=" "
               note=""
               formContext="hero"
             />
