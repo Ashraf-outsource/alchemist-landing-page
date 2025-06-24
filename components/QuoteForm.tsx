@@ -16,24 +16,31 @@ export const QuoteForm: React.FC<QuoteFormProps> = ({ title, subtitle, note, for
     phone: '',
     message: '',
   });
-  const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('submitting');
-    setTimeout(() => {
-      setStatus('success');
-      setFormData({
-        fullName: '',
-        email: '',
-        phone: '',
-        message: '',
+    try {
+      await fetch('https://formspree.io/f/your_form_id', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          fullName: formData.fullName,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+        }),
       });
-    }, 1000); // Simulate a delay
+      setStatus('success');
+      setFormData({ fullName: '', email: '', phone: '', message: '' });
+    } catch {
+      setStatus('error');
+    }
   };
 
   return (
