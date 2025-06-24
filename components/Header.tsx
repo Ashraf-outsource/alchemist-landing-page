@@ -20,12 +20,12 @@ export const Header: React.FC = () => {
   }, []);
 
   return (
-    <header style={{ height: '100px', minHeight: '100px' }} className={` top-0 left-0 right-0 z-50 transition-all duration-400 ${isScrolled ? 'bg-black bg-opacity-90 shadow-lg backdrop-blur-sm' : 'bg-transparent'}`}>
-      <div className="container mx-auto px-4 sm:px-8 lg:px-8">
+    <header className={` top-0 left-0 right-0 z-70 transition-all duration-400 ${isScrolled ? 'bg-black bg-opacity-90 shadow-lg backdrop-blur-sm' : 'bg-transparent'}`}>
+      <div className="container mx-auto px-6 sm:px-8 lg:px-12">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
             <a href="#" aria-label="Alchemist Resin Home">
-              <img src={logoUrl} alt="Alchemist Resin Logo" className="h-28 w-auto" />
+              <img src={logoUrl} alt="Alchemist Resin Logo" className="h-24 w-auto" />
             </a>
           </div>
 
