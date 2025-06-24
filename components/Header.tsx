@@ -53,14 +53,15 @@ export const Header: React.FC = () => {
             >
               Get a Quote
             </GoldenButton>
-            <GoldenButton
-              variant="outline-black-gold-text"
-              className="text-xs px-4 py-2"
-              onClick={() => window.location.href='tel:+15663008780'}
-              type="button"
-            >
-              Call Now: +1 (929) 520-0087
-            </GoldenButton>
+            <a href="tel:+19295200087">
+              <GoldenButton
+                variant="outline-gold"
+                className="text-xs px-4 py-2"
+                type="button"
+              >
+                Call Now: +1 (929) 520-0087
+              </GoldenButton>
+            </a>
           </div>
 
           {/* Mobile menu button */}

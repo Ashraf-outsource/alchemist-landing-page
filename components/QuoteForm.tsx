@@ -26,7 +26,7 @@ export const QuoteForm: React.FC<QuoteFormProps> = ({ title, subtitle, note, for
     e.preventDefault();
     setStatus('submitting');
     try {
-      await fetch('https://formspree.io/f/mgvypvaj', {
+      await fetch('https://formspree.io/f/mblyakqr', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -44,7 +44,7 @@ export const QuoteForm: React.FC<QuoteFormProps> = ({ title, subtitle, note, for
   };
 
   return (
-    <div className="bg-[#1C1C1C] p-6 md:p-8 rounded-xl shadow-2xl w-full max-w-md">
+    <div className="bg-[#1C1C1C] p-6 md:p-8 rounded-xl shadow-2xl w-full max-w-md" id="quote-form">
       <h3 className="text-2xl font-bold text-white mb-1">{title}</h3>
       {subtitle && <p className="text-gray-400 mb-6 text-sm">{subtitle}</p>}
       <form onSubmit={handleSubmit}>

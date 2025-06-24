@@ -13,10 +13,12 @@ export const WhyChooseUs: React.FC = () => {
             <p className="text-gray-300 mb-8 leading-relaxed">
                At the heart of everything we do is a commitment to quality, trust, and customer satisfaction. We stand out by delivering personalized solutions tailored to your unique needs, backed by years of experience and a passion for excellence. Our team goes the extra mile to ensure timely service, transparent communication, and long-term value. When you choose us, you're not just selecting a service you're choosing a reliable partner who cares about your success.</p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-              <GoldenButton onClick={() => console.log('Hero Get a Quote clicked')} className="px-10 py-4 text-base">
-                Get Your free Quote
-              </GoldenButton>
-              <GoldenButton onClick={() => console.log('Hero Call Now clicked')} className="px-10 py-4 text-base">
+              <a href="#quote-form">
+                <GoldenButton className="px-10 py-4 text-base">
+                  Get Your free Quote
+                </GoldenButton>
+              </a>
+              <GoldenButton variant="outline-gold" className="px-10 py-4 text-base">
                 Call Now: +1 (929) 520-0087
               </GoldenButton>              
 

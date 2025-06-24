@@ -21,10 +21,12 @@ export const Hero: React.FC = () => {
               Our skilled team takes pride in delivering exceptional garage epoxy finishes that not only elevate the appearance of your space but also provide unmatched durability. At ALCHEMIST Resin, we understand the importance of protecting and enhancing your concrete surfaces, which is why we offer professional concrete sealing services. 
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
-              <GoldenButton onClick={() => console.log('Hero Get a Quote clicked')} className="px-10 py-4 text-base">
-                Get a Quote
-              </GoldenButton>
-              <GoldenButton onClick={() => console.log('Hero Call Now clicked')} className="px-10 py-4 text-base">
+              <a href="#quote-form">
+                <GoldenButton className="px-10 py-4 text-base">
+                  Get a Quote
+                </GoldenButton>
+              </a>
+              <GoldenButton variant="outline-gold" className="px-10 py-4 text-base">
                 Call Now: +1 (929) 520-0087
               </GoldenButton>
             </div>
