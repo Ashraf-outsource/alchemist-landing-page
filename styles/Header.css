@@ -1,0 +1,7 @@
+/* Ya jahan bhi aap header ka CSS likhte hain */
+
+.header {
+  height: 100px; /* Apni desired height dalen, jaise 100px */
+  min-height: 100px;
+  /* ...baaki styling... */
+}
