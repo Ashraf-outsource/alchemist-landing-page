@@ -26,7 +26,7 @@ export const QuoteForm: React.FC<QuoteFormProps> = ({ title, subtitle, note, for
     e.preventDefault();
     setStatus('submitting');
     try {
-      await fetch('https://formspree.io/f/your_form_id', {
+      await fetch('https://formspree.io/f/mgvypvaj', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

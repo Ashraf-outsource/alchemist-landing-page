@@ -3,11 +3,10 @@ import { NavItem } from '../types';
 import { GoldenButton } from './GoldenButton';
 
 const navItems: NavItem[] = [
-  { label: 'Home', href: '#' },
-  { label: 'Services', href: '#services' },
+  { label: 'Home', href: '#' }
 ];
 
-const logoUrl = "/logo.png";
+const logoUrl = "/logos.png";
 
 export const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -48,7 +47,9 @@ export const Header: React.FC = () => {
             <GoldenButton 
               variant="outline-black-gold-text" 
               className="text-xs px-4 py-2" 
-              onClick={() => console.log('Get a Quote clicked')}
+              onClick={() => {
+                document.getElementById('quote-form')?.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               Get a Quote
             </GoldenButton>
