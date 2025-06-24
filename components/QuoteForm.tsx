@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { GoldenButton } from './GoldenButton';
 import { FormData } from '../types';
@@ -7,7 +6,7 @@ interface QuoteFormProps {
   title: string;
   subtitle?: string;
   note?: string;
-  formContext: 'hero' | 'faq'; // Differentiates forms for unique IDs
+  formContext: 'hero' | 'faq';
 }
 
 export const QuoteForm: React.FC<QuoteFormProps> = ({ title, subtitle, note, formContext }) => {
@@ -17,6 +16,7 @@ export const QuoteForm: React.FC<QuoteFormProps> = ({ title, subtitle, note, for
     phone: '',
     message: '',
   });
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -24,8 +24,16 @@ export const QuoteForm: React.FC<QuoteFormProps> = ({ title, subtitle, note, for
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log(`Quote Form (${formContext}) Submitted:`, formData);
-    // Add submission logic here
+    setStatus('submitting');
+    setTimeout(() => {
+      setStatus('success');
+      setFormData({
+        fullName: '',
+        email: '',
+        phone: '',
+        message: '',
+      });
+    }, 1000); // Simulate a delay
   };
 
   return (
@@ -38,7 +46,7 @@ export const QuoteForm: React.FC<QuoteFormProps> = ({ title, subtitle, note, for
             type="text"
             name={formContext === 'hero' ? 'fullName' : 'name'}
             id={`${formContext}-name`}
-            value={formContext === 'hero' ? formData.fullName : formData.name}
+            value={formContext === 'hero' ? formData.fullName : (formData as any).name || ''}
             onChange={handleChange}
             placeholder={formContext === 'hero' ? 'Your Full Name' : 'Your Name'}
             className="w-full bg-white text-gray-900 px-4 py-3 rounded-md focus:ring-2 focus:ring-[#D1A054] outline-none placeholder-gray-500"
@@ -80,10 +88,17 @@ export const QuoteForm: React.FC<QuoteFormProps> = ({ title, subtitle, note, for
             required
           ></textarea>
         </div>
-        <GoldenButton type="submit" fullWidth>
-          {formContext === 'hero' ? 'Get a Quote' : 'Submit'}
+        <GoldenButton type="submit" fullWidth disabled={status === 'submitting'}>
+          {status === 'submitting'
+            ? 'Submitting...'
+            : formContext === 'hero'
+            ? 'Get a Quote'
+            : 'Submit'}
         </GoldenButton>
       </form>
+      {status === 'success' && (
+        <p className="text-green-400 mt-4 text-center">Thank you! Your message has been sent.</p>
+      )}
       {note && <p className="text-xs text-gray-500 mt-4 text-center">{note}</p>}
     </div>
   );
