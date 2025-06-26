@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { GoldenButton } from './GoldenButton';
 
@@ -6,17 +5,10 @@ export const ContactSection: React.FC = () => {
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Contact Form Submitted:', { phone, email });
-    // Add submission logic
-  };
-
   return (
     <section className="bg-[#1C1C1C] py-10 md:py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-10">
-          
           {/* Left: Title and Address */}
           <div className="text-center md:text-left flex-shrink-0">
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
@@ -24,16 +16,19 @@ export const ContactSection: React.FC = () => {
             </h2>
             <br/>
             <p className="text-sm text-gray-400 mt-2">
-              
               1-15 57th Ave Suite 4523 Long Island city NY 11101
             </p>
           </div>
-
-          {/* Right: Form and (eventually) Icon */}
+          {/* Right: Form */}
           <div className="flex items-center gap-4 w-full md:w-auto md:flex-grow justify-center md:justify-end">
-            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+            <form
+              action="https://formspree.io/f/mrbkonak" // <-- yahan apna endpoint lagayen
+              method="POST"
+              className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto"
+            >
               <input
                 type="tel"
+                name="phone"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 placeholder="Phone *"
@@ -43,6 +38,7 @@ export const ContactSection: React.FC = () => {
               />
               <input
                 type="email"
+                name="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Email Address *"
@@ -51,19 +47,10 @@ export const ContactSection: React.FC = () => {
                 aria-label="Email Address"
               />
               <GoldenButton type="submit" className="rounded-full px-8 py-3 w-full sm:w-auto whitespace-nowrap text-sm">
-                Chat Now
+                Contact now
               </GoldenButton>
             </form>
-            {/* 
-              Placeholder for the red scribble icon. 
-              If you have an SVG or image for it, you can add it here.
-              Example: 
-              <div className="ml-2 md:ml-4 hidden sm:block">
-                <img src="/path/to/your-icon.svg" alt="Connect" className="w-12 h-12 md:w-16 md:h-16" />
-              </div>
-            */}
           </div>
-
         </div>
       </div>
     </section>
