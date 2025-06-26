@@ -6,7 +6,7 @@ export const Hero: React.FC = () => {
   return (
     <section 
       className="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat pt-20 md:pt-0"
-      style={{ backgroundImage: "url('/Group1.png')" }}
+      style={{ backgroundImage: "url('/project.jpg')" }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-70"></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
